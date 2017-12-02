@@ -1,0 +1,30 @@
+// enter a string to replace each letter with the letter after it in the alphabit and then replace the vowels (a,e,i,o,u) in the new string with their capial letters.
+#include <iostream>
+#include<string>
+#include<ctype.h>
+
+using namespace std;
+
+string LetterChanges(string str) { 
+
+
+  int i;
+  for (i=0;i<=str.length();i++)
+  {if (str[i]>='a' && str[i]<='z')
+      str[i]=str[i]+1;
+  }
+  for (i=0;i<=str.length();i++)
+  {if (str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u')
+  str[i]=toupper(str[i]);}
+  
+  return str; 
+            
+}
+
+int main() { 
+  
+  // keep this function call here
+  cout << LetterChanges(gets(stdin));
+  return 0;
+    
+}
