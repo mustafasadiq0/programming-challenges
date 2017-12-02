@@ -1,0 +1,26 @@
+#include <iostream>
+#include<string>
+#include<ctype.h>
+
+using namespace std;
+
+string LetterCapitalize(string str) { 
+
+  int i;
+  for (i=0;i<=str.length();i++)
+  {if (i==0)
+  str[i]=toupper(str[i]);
+  if (str[i-1]==' ')
+  str[i]=toupper(str[i]);
+  }
+  return str; 
+            
+}
+
+int main() { 
+  
+  // keep this function call here
+  cout << LetterCapitalize(gets(stdin));
+  return 0;
+    
+}
