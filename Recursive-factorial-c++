@@ -13,7 +13,7 @@ int FirstFactorial(int num) { int i,fact=1;
 int main() { 
   
   // keep this function call here
-  cout << FirstFactorial(gets(stdin));
+  cout << FirstFactorial(gets(stdin));  //here you will be asked to enter the number that you want its factorial
   return 0;
     
 }
